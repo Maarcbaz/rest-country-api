@@ -1,0 +1,92 @@
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 300;
+}
+
+/* set up the body */
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+
+/* make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#light {
+  --bg-color: hsl(0, 0%, 98%);
+  --text-color: hsl(200, 15%, 8%);
+  --bg-element: hsl(0, 0%, 100%);
+  --bg-input: hsl(0, 0%, 52%);
+}
+
+#dark {
+  --bg-color: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+  --bg-element: hsl(209, 23%, 22%);
+  --bg-input: hsl(209, 23%, 22%);
+}
+
+.container {
+  max-width: 120ch;
+  margin-inline: auto;
+}
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.05);
+  background-color: var(--bg-element);
+}
+
+.centered {
+  margin: auto;
+  padding-top: 30vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

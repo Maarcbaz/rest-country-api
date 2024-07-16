@@ -1,0 +1,51 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--bg-element);
+  color: var(--text-color);
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding-inline: clamp(1rem, 2vw, 2rem);
+}
+
+header h1 {
+  font-size: clamp(1rem, 3vw, 1.6rem);
+  font-weight: 800;
+}
+
+header button {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-element);
+  color: var(--text-color);
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+header button:hover {
+  cursor: pointer;
+}
+
+header button img {
+  margin-right: 10px;
+  fill: var(--text-color);
+  width: 15px;
+  aspect-ratio: 1;
+}
+
+main {
+  padding-inline: clamp(1.5rem, 2vw, 2.5rem);
+  padding-bottom: 40px;
+  margin-top: 2rem;
+}
